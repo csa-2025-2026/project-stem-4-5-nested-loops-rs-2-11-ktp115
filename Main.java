@@ -4,12 +4,19 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Make sure to test your methods here
+    printNTimes()
   }
 
   public static void printNTimes(String word, int N)
   {
-    // code solution here
+    for (int row = 1; row <= 10; row++)
+        {
+            for (int col = 1; col <= row; col++)
+            {
+                System.out.print(word.substring(0,N) + word);
+            }
+            System.out.println();
+        }
   }
 
   public static void printNums()
